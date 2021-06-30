@@ -1,4 +1,5 @@
 ﻿#include "int_array.h"
+using namespace std;
 
 IntArray::IntArray()
 {}

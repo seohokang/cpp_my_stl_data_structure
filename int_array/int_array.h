@@ -1,12 +1,11 @@
 ﻿#pragma once
 #include <iostream>
-using namespace std;
 class IntArray
 {
 public:
 	IntArray();
 	IntArray(int length);
-	IntArray(const initializer_list<int>& list);
+	IntArray(const std::initializer_list<int>& list);
 	~IntArray();
 
 	void initialize();
@@ -15,7 +14,7 @@ public:
 	void insert_before(const int& value, const int& idx);
 	void remove(const int& idx);
 	void push_back(const int& value);
-	friend ostream& operator << (ostream& out, IntArray& arr);
+	friend std::ostream& operator << (std::ostream& out, IntArray& arr);
 	int& operator [](int i);
 	IntArray& operator =(const IntArray& int_array);
 private:
